@@ -25,32 +25,33 @@ section {
 
 #contentcontainer{
 
-width: 1000px;
+width: 800px;
 display: block;
 margin: auto;
 
 }
 
 .Button {
-  color: #5e5e5e;
-  background-color: #ffffff;
+  color: white;
   text-transform: uppercase;
-  font-weight: 200;
-  font-size: 0.8125rem;
-  letter-spacing: 0.15rem;
   text-decoration: none;
-  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-  border-style: solid;
-  border-width: 0.1rem;
-  border-color: #5e5e5e;
-  margin: 2px 2px 2px 2px;
+  font-weight: 600;
+  font-size: .75em;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  padding: 1em;
+
+
+  background-color: #e4e4e4;
+  color: #333;
+  width: 225px;
   -webkit-transition: ease-out 0.2s;
   -moz-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
 
 .Button:hover {
-  background-color: #5e5e5e;
+  background-color: #cacaca;
   color: white;
 }
 
@@ -81,10 +82,13 @@ input[type=text] {
 }
 
 button[type=submit], button[type=reset] {
-  background-color:#5e5e5e;
-  color: #ffffff;
+  background-color:#e4e4e4;
+  color: #333;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .75em;
   padding:1em;
   width: 150px;
   border: 0px;
@@ -94,7 +98,7 @@ button[type=submit], button[type=reset] {
 }
 
 button[type=submit]:hover, button[type=reset]:hover {
-  background-color: #E35E61;
+  background-color: #FF3333;
   text-decoration: none;
   color: white;
 }
@@ -271,7 +275,7 @@ p.boxtext{
 }
 
 div#color1{
-  background-color:#000000;
+  background-color:#333;
   padding: 10px;
   width: 100px;
   height: 80px;
@@ -280,7 +284,7 @@ div#color1{
 }
 
 div#color2{
-  background-color:#5e5e5e;
+  background-color:#cacaca;
   padding: 10px;
   width: 100px;
   height: 80px;
@@ -288,7 +292,7 @@ div#color2{
   text-align: center;
 }
 #color3{
-  background-color:#E35E61;
+  background-color:#FF3333;
   padding: 10px;
   width: 100px;
   height: 80px;
@@ -296,7 +300,7 @@ div#color2{
   text-align: center;
 }
 div#color4{
-  background-color:#33376a;
+  background-color:#2D6E68;
   padding: 10px;
   width: 100px;
   height: 80px;
