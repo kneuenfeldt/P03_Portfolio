@@ -323,7 +323,7 @@ div#pallette{
 }
 
 .container .block {
-  height: 200px;
+
   flex-basis: 15em;
   flex-grow: 1;
 }

@@ -1,0 +1,572 @@
+html{
+
+}
+body{
+  margin:0px;
+  background-color: #F5F5F5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e4e4e4;
+  margin-top:40px;
+}
+
+h1, h2, h3, h4{
+   font-family: 'Montserrat'
+}
+
+ul{
+  font-size: 14px;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  color: #5e5e5e;
+  line-height:2em;
+}
+
+footer{
+  display: block;
+  background-color:#000000;
+   font-family: 'Montserrat';
+  text-align: center;
+  margin-top:5em;
+  font-size: .75rem;
+  padding: 1.5em;
+  text-decoration: none;
+}
+
+/*Different Header class and id perameters*/
+h1.pageHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:80px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-align: center;
+}
+
+h1.aboutHeader{
+  font-size: 32px;
+  padding-bottom:20px;
+  flex-basis: 100%;
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
+}
+
+h1#homepageHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
+h1#pixardemopageHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
+h1#gamejamHeader{
+  font-size: 32px;
+  padding-left: 10px;
+  padding-top:40px;
+  margin-bottom: 0px;
+  flex-basis: 100%;
+  color: #1a1a1a;
+  font-family: 'Montserrat';
+}
+
+h2.secondaryHeader{
+  padding-left:10px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  display: block;
+  width: 100%;
+}
+
+h2#ContactHeader{
+  color: #333;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: left;
+}
+
+/*Footer Elements*/
+footer p{
+  margin:0;
+}
+
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: #33376a;
+  font-weight: 600;
+}
+footer a:active{
+  text-decoration: none;
+  color: #33376a;
+  font-weight: 600;
+}
+
+/*Perameters for where Footer should be placed based on screen size*/
+@media screen and (min-height: 800px) and (min-width:801px) {
+footer#gridpagefooter{
+  position: fixed;
+  bottom: 0px;
+  width: 100%
+}
+}
+
+@media screen and (min-height: 850px){
+footer#fullcolumnpagefooter{
+  position: fixed;
+  bottom: 0px;
+  width: 100%
+}
+}
+
+.topnav a {
+  float: left;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  font-size: 12px;
+  letter-spacing: .2em;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.topnav a:hover {
+  background-color: #cacaca;
+
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  margin-right: 10%;
+}
+
+#logo{
+  position: absolute;
+  left:10%;
+  top: 40px;
+
+}
+
+/*Column Contain Structure and Parameters*/
+.columnContainer{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat';
+  background-color: #f5f5f5;
+  color:#212121;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left:15%;
+  padding-right:15%;
+}
+
+/*Full Colum Grid Structure and elements within*/
+.columnContainer .fullcolumn {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.columnContainer .fullcolumn h3 {
+  font-weight: 100;
+  font-size: 24px;
+  font-weight:normal;
+}
+
+.columnContainer .fullcolumn p {
+    font-size: 16px;
+    color: #5e5e5e;
+    font-weight: 400;
+    line-height: 2em;
+    padding-bottom: 10px;
+}
+
+.insideImage{
+  position: absolute;
+  text-align: left;
+  width:100%;
+  color:white;
+  margin-bottom: 0px;
+  padding: 5px;
+  bottom: 0px;
+  left: 10px;
+}
+
+
+/*Three column grid structure and elements within*/
+.columnContainer .column {
+  flex-basis: 33.333%;
+  padding-top: .5em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.columnContainer .column h3 {
+  font-weight: 100;
+  font-size: 24px;
+  font-weight:normal;
+}
+
+.columnContainer .column h3.paymentsHeader{
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top:30px;
+  font-weight: 500;
+}
+
+.columnContainer .column p {
+    font-size: 12px;
+    color: #5e5e5e;
+    padding-bottom: 10px;
+}
+
+/*images in 3 column grid*/
+.gridimageslink{
+  width:100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.gridimageslink #highlightimage{
+  margin-top: 40px;
+}
+
+/*hover effecrs on image links*/
+.gridimageslink a img:hover{
+  box-shadow: 0px 0px 10px #888888;
+}
+
+/*hover effecrs on image links*/
+.gridimageslink a:active{
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.gridimages{
+  width:100%;
+}
+
+/*Adaptable Grid Structure*/
+@media screen and (max-width: 1100px){
+  .columnContainer{
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+  .columnContainer{
+    padding-left:3%;
+    padding-right:3%;
+  }
+}
+
+  @media screen and (max-width: 800px){
+    .columnContainer .column {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+/*Changes to nav bar if screen under 800px*/
+  img#location{
+    display: none;
+  }
+
+  img#home{
+    position: absolute;
+      top: 7px;
+      right: 6px;
+      margin-top:0px;
+
+}
+
+/* Effects to full column based on screen size*/
+  .columnContainer .fullcolumn .contactinfo{
+    display: none
+  }
+
+  .columnContainer .fullcolumn h3{
+    font-size: 16px;
+    font-weight:normal;
+  }
+
+  .columnContainer .fullcolumn p{
+    font-size: 15px;
+    font-weight:normal;
+  }
+
+  .columnContainer .column p.bottomnavText{
+  font-size: 14px;
+}
+}
+
+
+
+
+
+
+/*Navigation Buttons */
+
+
+.navigationbutton{
+  background-color: #ffffff;
+  display: inline-block;
+
+  color: #5e5e5e;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  border: 2px solid #5e5e5e;
+  padding:1em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  margin-bottom: 2em;
+
+}
+
+.navigationbutton:hover{
+  background-color: #5e5e5e;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.navigationbutton:active{
+  background-color: #5e5e5e;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+
+
+/*Text and header that appears in Carousel*/
+.carouselheader{
+  text-align: left;
+  font-weight: 300;
+  font-family: 'Montserrat';
+}
+
+.carouselfont{
+  text-align: left;
+  width:550px;
+  font-weight: 100;
+  padding-bottom: .5em;
+}
+
+.carouselbutton{
+  background-color: rgba(255,255,255,0);
+  font-family: 'Montserrat';
+  display: block;
+  color: white;
+  font-size: 12px;
+  border: 2px solid white;
+
+  padding:1em;
+  width: 120px;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  margin-bottom: 4.5em;
+}
+
+.carouselbutton:hover{
+  background-color: white;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.carouselbutton:active{
+  background-color: white;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+
+/* Calendar Box */
+.year{
+  font-size: 16px;
+  margin-bottom: 0px;
+    margin-top: -7px;
+}
+
+.calendardate{
+  position: absolute;
+  text-align: center;
+  background-color: #ffffff;
+  width:50px;
+  margin-bottom: 0px;
+  padding: 5px;
+  top: 8px;
+  right: 8px;
+
+}
+
+.calendardate p{
+  margin-bottom: 0px;
+}
+
+.columnContainer .fullcolumn .contactinfo{
+  color:white;
+}
+
+/*--Input Field Parameters to different elements*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color:#e4e4e4;
+  color: #333;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  padding:1em;
+  width: 100%;
+  border: 0px;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  margin-bottom: 40px;
+}
+
+.inputfields{
+  width:100%;
+}
+
+input[type=submit]:hover {
+  background-color: #FF3333;
+  text-decoration: none;
+  color: white;
+}
+
+input[type=submit]:active {
+  background-color: #FF3333;
+  color: white;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+label{
+  font-size: 14px;
+  display: block;
+  color:#5e5e5e;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 13px;
+}
+
+#portrait{
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+#province{
+display: inline;
+width: 49%;
+}
+
+#zipcode{
+  display: inline;
+  width: 49%;
+}
+
+#expm{
+  display: inline;
+  width: 49%;
+}
+
+#expy{
+  display: inline;
+  width: 49%;
+}
+
+#cvv{
+  display: inline;
+  width: 49%;
+}
+
+#ticketnumber{
+  width: 65px;
+  display: block;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>P03 Style Guide</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,100,200,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <img id = "logo" src="img/Logo1.png" alt="Smiley face" >
+
+  <nav class="topnav">
+  <div class="topnav-right">
+    <a href="index.html">HOME</a>
+    <a href="#contact">PORTFOLIO</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+  <div class="columnContainer">
+
+    <h1 class = "pageHeader"> HELLO! </h1>
+
+    <!-- Full Column -->
+    <div class="fullcolumn">
+
+      <p>My name is Kam Neuenfeldt. I'm a Wisconsin born level designer studying media arts and interactive systems in the Interactive Arts and Technology program at Simon Fraser University in Vancouver. I love being part of the ideation, planning, and implementation process of level design. My strongest skills are in programming as well as 3D modeling and web development.</p>
+      <img id = "portrait" src="img/portrait.png" alt="brokenlink" width = "225" height = "300">
+      <p>My greatest passion is playing videogames, especially the Sonic the Hedgehog franchise which I have made several mods of the original Genesis Platformers. I also love being involved in sports, having played hockey and soccer competitively for over 15 years.</p>
+
+    </div>
+
+    <!--Column 1of3-->
+    <div class =  "column">
+      <div class = "inputfields">
+        <form action = "http://www.sfu.ca/~kneuenfe/RESUME%20FINAL.pdf">
+          <input type="submit" value="RESUM&Eacute; ">
+        </form>
+      </div>
+    </div>
+    <!--End of column-->
+
+
+
+
+
+
+      <h2 id = "ContactHeader"> CONTACT </h2>
+
+    <div class="fullcolumn">
+
+
+
+      <p>If you'd like to reach me, please email me at kneuenfeldt@hotmail.ca or send a message below. </p>
+
+    </div> <!--End of Full column-->
+
+    <!--Column 1of3-->
+    <div class="column">
+
+        <form>
+
+          <input type="text" id="fname" name="firstname" placeholder="FULL NAME">
+
+
+          <input type="text" id="lname" name="lastname" placeholder="EMAIL">
+        </form>
+
+    </div>
+
+    <!--Full column for Text Field-->
+    <div class="fullcolumn">
+        <form>
+          <label id = "textarealabel">Your Message:</label>
+          <textarea></textarea>
+        </form>
+    </div>
+
+    <!--Column 1of3-->
+    <div class =  "column">
+      <div class = "inputfields">
+        <form>
+          <input type="submit" value="SEND MESSAGE" onclick="myFunction()">
+        </form>
+      </div>
+    </div>
+    <!--End of column-->
+
+    </div>
+    <!--End of Page Content-->
+
+    <!-- Drop Down Menu Script and Alert if Message sent Sucessfully-->
+  <script>
+
+    function myFunction() {
+      alert("Your message has been sent. We will try to respond within 24 hours.");
+    }
+  </script>
+
+
+  <!-- Footer -->
+   <footer>
+
+      <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+
+  </footer>
+
+
+
+
+
+</body>
+</html>
