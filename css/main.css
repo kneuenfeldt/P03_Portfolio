@@ -1,24 +1,22 @@
 html{
 
 }
+
+*{
+
+}
 body{
   margin:0px;
   background-color: #F5F5F5;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #e4e4e4;
-  margin-top:40px;
-}
 
 h1, h2, h3, h4{
-   font-family: 'Montserrat'
+   font-family: 'Montserrat';
 }
 
 ul{
   font-size: 14px;
-  padding-left: 2em;
   padding-bottom: 1em;
   color: #5e5e5e;
   line-height:2em;
@@ -26,7 +24,7 @@ ul{
 
 footer{
   display: block;
-  background-color:#000000;
+  background-color:#333;
    font-family: 'Montserrat';
   text-align: center;
   margin-top:5em;
@@ -52,7 +50,7 @@ h1.aboutHeader{
   font-size: 32px;
   padding-bottom:20px;
   flex-basis: 100%;
-  font-family: 'Montserrat';
+  font-family: "FuturaPT";
   margin-bottom: 20px;
 }
 
@@ -63,28 +61,10 @@ h1#homepageHeader{
   margin-bottom: 0px;
   flex-basis: 100%;
   color: #1a1a1a;
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
 }
 
-h1#pixardemopageHeader{
-  font-size: 32px;
-  padding-left: 10px;
-  padding-top:40px;
-  margin-bottom: 0px;
-  flex-basis: 100%;
-  color: #1a1a1a;
-  font-family: 'Montserrat';
-}
 
-h1#gamejamHeader{
-  font-size: 32px;
-  padding-left: 10px;
-  padding-top:40px;
-  margin-bottom: 0px;
-  flex-basis: 100%;
-  color: #1a1a1a;
-  font-family: 'Montserrat';
-}
 
 h2.secondaryHeader{
   padding-left:10px;
@@ -105,6 +85,192 @@ h2#ContactHeader{
   font-size: 20pt;
   text-align: left;
 }
+
+/*Navigation Elements*/
+  .topnav {
+    overflow: hidden;
+    background-color: #e4e4e4;
+    margin-top:40px;
+    height: 46px;
+  }
+
+  .topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+      font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: .1em;
+
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+  }
+
+  .topnav a:hover {
+    background-color: #cacaca;
+
+    color: white;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .topnav-right {
+    float: right;
+    margin-right: 15%;
+  }
+
+
+
+
+  /*Secondary Navigation (Only appears when screen is under 767px)*/
+
+    .navigation {
+      display: none
+    }
+
+  @media screen and (max-width: 767px){
+
+      .topnav-right a{
+        display: none;
+      }
+
+
+  .navigation {
+    display: inline-block;
+      width: 100%;
+      position: fixed;
+      z-index: 89;
+      top: 40px;
+      left:0px;
+      background-color: #e4e4e4;
+      overflow-y: hidden;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      padding-top: 0px;
+  }
+
+  .navigation a {
+      text-decoration: none;
+  }
+
+  .navigation ul {
+      padding-top:150px;
+      padding-bottom:100%;
+      padding-left: 0px;
+      margin-top:0px;
+      padding-left:15px;
+      padding-right:12px;
+      margin-left: 4%;
+      background-color: #f5f5f5;
+      text-align:left;
+      list-style:none;
+
+
+  }
+
+
+  .menulist {
+      width:200px;
+      padding 0;
+  }
+
+
+  .line1, .line2, .line3 {
+    margin-top:5px;
+    background-color:#333;
+    width:25px;
+    height:3px;
+    display:block;
+    position:relative;
+    opacity:1.0;
+    border-radius:15%;
+    transition: all .3s;
+  }
+
+  .line1.active {
+    transform: rotate(180deg);
+    opacity:0.0;
+    background-color:white;
+    top:5px;
+  }
+
+  .line2.active {
+    transform: rotate(45deg);
+    background-color: #333;
+  }
+
+  .line3.active {
+    transform: rotate(-45deg);
+    background-color: #333;
+    top:-7px;
+  }
+
+  .menuitems {
+      padding-top:12px;
+      padding-bottom:12px;
+      text-decoration: none;
+      list-style:none;
+      /*  font-family: 'Open Sans', sans-serif; */
+           font-family: 'Montserrat';
+      font-weight: 300;
+      font-size: 24px;
+      display: inline-block;
+      position:relative;
+      text-align:center;
+      color: #333;
+      opacity:0.0;
+      transition: all .5s ease-in-out;
+  }
+
+  .menuitems ul{
+    -webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+  }
+
+  .menuitems:after {
+    content:'';
+    display:block;
+    width: 0;
+    height: 1px;
+    background: #333;
+    transition: width .2s;
+  }
+
+  .menuitems:hover::after {
+      width:100%;
+  }
+
+  #closebtn {
+      height:25px;
+      width:25px;
+      position: absolute;
+      text-decoration:none;
+      top: 9px;
+      right: 0px;
+      font-size: 36px !important;
+      margin-right: 5%;
+      z-index:100;
+      color:#fff;
+      cursor:pointer;
+      transition:background-position .3s;
+  }
+
+  #main {
+      transition: margin-top .4s;
+      text-align:center;
+      margin:auto;
+      padding: 16px;
+      font-size:30px;
+  }
+}
+
 
 /*Footer Elements*/
 footer p{
@@ -144,46 +310,19 @@ footer#fullcolumnpagefooter{
 }
 }
 
-.topnav a {
-  float: left;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-  font-size: 12px;
-  letter-spacing: .2em;
-  -webkit-transition: ease-out 0.2s;
-  -moz-transition: ease-out 0.2s;
-  transition: ease-out 0.2s;
-}
-
-.topnav a:hover {
-  background-color: #cacaca;
-
-  color: white;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav-right {
-  float: right;
-  margin-right: 10%;
-}
-
 #logo{
   position: absolute;
-  left:10%;
+  z-index: 99;
+  left:16%;
   top: 40px;
 
 }
 
+
+
 /*Column Contain Structure and Parameters*/
 .columnContainer{
+    box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   font-family: 'Montserrat';
@@ -198,9 +337,10 @@ footer#fullcolumnpagefooter{
 /*Full Colum Grid Structure and elements within*/
 .columnContainer .fullcolumn {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 1em;
   padding-left: 15px;
   padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .columnContainer .fullcolumn h3 {
@@ -231,6 +371,7 @@ footer#fullcolumnpagefooter{
 
 /*Three column grid structure and elements within*/
 .columnContainer .column {
+    box-sizing: border-box;
   flex-basis: 33.333%;
   padding-top: .5em;
   padding-left: 15px;
@@ -258,6 +399,7 @@ footer#fullcolumnpagefooter{
 
 /*images in 3 column grid*/
 .gridimageslink{
+    box-sizing: border-box;
   width:100%;
   position: relative;
   margin-bottom: 10px;
@@ -288,6 +430,15 @@ footer#fullcolumnpagefooter{
     padding-right:3%;
   }
 
+  .topnav-right {
+    margin-right: 3%;
+  }
+
+  #logo{
+    position: absolute;
+    left:4%;
+    top: 40px;
+  }
 }
 
 @media screen and (max-width: 900px){
