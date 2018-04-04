@@ -1,0 +1,98 @@
+body{
+  margin: 10px;
+}
+
+#redsquare{
+width: 200px;
+height: 200px;
+background-color: red;
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+margin-top: 50px;
+margin-left: 50px;
+}
+
+#bluesquare{
+
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-top: 50px;
+  margin-left: 50px;
+
+  -webkit-animation: color_change 1.5s infinite alternate;
+	-moz-animation: color_change 1.5s infinite alternate;
+	-ms-animation: color_change 1.5s infinite alternate;
+	-o-animation: color_change 1.5s infinite alternate;
+	animation: color_change 1.5s infinite alternate;
+}
+
+
+
+#yellowsquare{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin-top: 50px;
+  margin-left: 50px;
+
+  animation: translation 3s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  }
+
+
+/*Keyframes for rotation animation for each type of browser */
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+     }
+   }
+@-webkit-keyframes spin {
+   100% {
+     -webkit-transform: rotate(360deg);
+     }
+
+   }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+    }
+  }
+
+  /*Keyframes for color change animation for each type of browser */
+  @-webkit-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: purple; }
+}
+@-moz-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: purple; }
+}
+@-ms-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: purple; }
+}
+@-o-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: purple; }
+}
+@keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: purple; }
+}
+
+/*Key frames for translation*/
+@keyframes translation {
+0% {
+  transform: translate(0, 0);
+}
+50% {
+  transform: translate(500px, 0px);
+}
+100% {
+  transform: translate(0px, 0px);
+}
+}
