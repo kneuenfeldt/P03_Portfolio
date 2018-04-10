@@ -33,10 +33,10 @@
     </span>
 
     <ul class="menulist">
-      <li><a class="menuitems" href="#">HOME</a></li>
-      <li><a class="menuitems" href="#">PORTFOLIO</a></li>
-      <li><a class="menuitems" href="#">ABOUT</a></li>
-      <li><a class="menuitems" href="#">RESUME</a></li>
+      <li><a class="menuitems" href="index.html">HOME</a></li>
+      <li><a class="menuitems" href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="about.html">ABOUT</a></li>
+      <li><a class="menuitems" href="http://www.sfu.ca/~kneuenfe/RESUME%20FINAL.pdf">RESUME</a></li>
     </ul>
   </div>
 
@@ -50,12 +50,12 @@
 
   <!-- Full Column  -->
     <div class="fullcolumn">
-      <div id ="nameHeaderSection">
-        <h1 id = "nameHeader"> KAM NEUENFELDT </h1>
+      <div class ="nameHeaderSection">
+        <h1 class = "nameHeader"> KAM NEUENFELDT </h1>
         <img id = "iconlogo" src="img/logoBackground.png" alt="Smiley face" >
         <h2 id = "jobHeader"> Level Designer </h2>
       </div>
-      <div id = "textbox">
+      <div class = "textbox">
         <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
          I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
         </p>
@@ -64,17 +64,17 @@
     </div>
 
     <h2 class = "sectionHeader"> MY PORTFOLIO </h2>
-    <p id = "description"> MY LASTEST WORK. <a href = "portfolio.css"><strong>SEE MORE </strong></a></p>
+    <p id = "description"> MY LASTEST WORK. <a href = "portfolio.html"><strong>SEE MORE </strong></a></p>
 
   <!--Classes Grid Content-->
   <!--Column1-->
     <div class="column">
       <div class = "gridimageslink">
-        <a href="mayabasics.html">
+        <a href="return.html">
           <img class = "gridimages" src="img/Dead_Patient_Square.png" alt="brokenlink" >
           <div class = "insideImage">
             <h3 class = "imgheader">DEAD PATIENT</h3>
-            <h4> Top-down 2D Horror Game</h4>
+            <h4>A Top-Down 2D Horror Game.</h4>
 
           </div>
         </a>
@@ -84,11 +84,11 @@
     <!--Column 2-->
     <div class="column">
       <div class = "gridimageslink">
-        <a href="mayabasics.html">
+        <a href="return.html">
           <img class = "gridimages" src="img/Return.png" alt="brokenlink" >
           <div class = "insideImage">
             <h3 class = "imgheader">RETURN</h3>
-            <h4>2D Action Platformer Game </h4>
+            <h4>A 2D Action Platformer Game. </h4>
           </div>
         </a>
       </div>
@@ -101,7 +101,7 @@
         <img class = "gridimages" src="img/Alarmbot.png" alt="brokenlink">
           <div class = "insideImage">
             <h3 class = "imgheader">ALARMBOT</h3>
-            <h4>3D Animated Short Film</h4>
+            <h4>A 3D Animated Short Film</h4>
           </div>
         </a>
       </div>
@@ -167,7 +167,7 @@
   <script type="text/javascript" src="js/live-border.js"></script>
   <script type="text/javascript">
     $(function(){
-      $("#textbox").liveBorder({
+      $(".textbox").liveBorder({
         top: true,
         right: true,
         bottom: true,

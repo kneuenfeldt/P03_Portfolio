@@ -20,7 +20,7 @@
   <nav class="topnav">
     <div class="topnav-right">
       <a href="index.html">HOME</a>
-      <a href="#contact">PORTFOLIO</a>
+      <a href="portfolio.html">PORTFOLIO</a>
       <a href="about.html">ABOUT</a>
     </div>
   </nav>
@@ -33,10 +33,10 @@
     </span>
 
     <ul class="menulist">
-      <li><a class="menuitems" href="#">HOME</a></li>
-      <li><a class="menuitems" href="#">PORTFOLIO</a></li>
-      <li><a class="menuitems" href="#">ABOUT</a></li>
-      <li><a class="menuitems" href="#">RESUME</a></li>
+      <li><a class="menuitems" href="index.html">HOME</a></li>
+      <li><a class="menuitems" href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="about.html">ABOUT</a></li>
+      <li><a class="menuitems" href="http://www.sfu.ca/~kneuenfe/RESUME%20FINAL.pdf">RESUME</a></li>
     </ul>
   </div>
 
@@ -50,102 +50,44 @@
 
   <!-- Full Column  -->
     <div class="fullcolumn">
-      <div id ="nameHeaderSection">
-        <h1 id = "nameHeader"> MY PORTFOLIO </h1>
-        <img id = "iconlogo" src="img/logoBackground.png" alt="Smiley face" >
-        <h2 id = "jobHeader"> A CLOSER LOOK </h2>
-      </div>
-      <div id = "textbox">
-        <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
-         I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
-        </p>
+      <div class ="nameHeaderSection">
+        <h1 class = "nameHeader"> MY PORTFOLIO </h1>
+        <h2 class = "portfolioSecondaryHeader"> A CLOSER LOOK</h2>
       </div>
 
-    </div>
-
-    <h2 class = "sectionHeader"> MY PORTFOLIO </h2>
-    <p id = "description"> MY LASTEST WORK. <a href = "portfolio.css"><strong>SEE MORE </strong></a></p>
-
-  <!--Classes Grid Content-->
-  <!--Column1-->
-    <div class="column">
       <div class = "gridimageslink">
-        <a href="mayabasics.html">
-          <img class = "gridimages" src="img/Dead_Patient_Square.png" alt="brokenlink" >
-          <div class = "insideImage">
-            <h3 class = "imgheader">DEAD PATIENT</h3>
-            <h4> Top-down 2D Horror Game</h4>
-
+        <a href="deadpatient.html">
+          <img class = "gridimages" src="img/Dead_Patient_Wide.png" alt="brokenlink" >
+          <div class = "insideWideImage">
+            <h3 class = "imgwideheader">DEAD PATIENT</h3>
+            <h4 class = "portimgheader">A Top-down 2D Horror Game</h4>
           </div>
-        </a>
-      </div>
-    </div>
+        </div>
 
-    <!--Column 2-->
-    <div class="column">
-      <div class = "gridimageslink">
-        <a href="mayabasics.html">
-          <img class = "gridimages" src="img/Return.png" alt="brokenlink" >
-          <div class = "insideImage">
-            <h3 class = "imgheader">RETURN</h3>
-            <h4>2D Action Platformer Game </h4>
+
+        <div class = "gridimageslink">
+          <a href="return.html">
+            <img class = "gridimages" src="img/Return_Wide.png" alt="brokenlink" >
+            <div class = "insideWideImage">
+              <h3 class = "imgwideheader">RETURN</h3>
+              <h4 class = "portimgheader">A 2D Action Platformer</h4>
+            </div>
           </div>
-        </a>
+
+          <div class = "gridimageslink">
+            <a href="https://vimeo.com/162527689">
+              <img class = "gridimages" src="img/Alarmbot_Wide.png" alt="brokenlink" >
+              <div class = "insideWideImage">
+                <h3 class = "imgwideheader">ALARMBOT</h3>
+                <h4 class = "portimgheader">A 3D Animated Short Film</h4>
+              </div>
+            </div>
+
+
       </div>
-    </div>
-
-    <!--Column 3-->
-    <div class="column">
-      <div class = "gridimageslink">
-        <a href="https://vimeo.com/162527689">
-        <img class = "gridimages" src="img/Alarmbot.png" alt="brokenlink">
-          <div class = "insideImage">
-            <h3 class = "imgheader">ALARMBOT</h3>
-            <h4>3D Animated Short Film</h4>
-          </div>
-        </a>
-      </div>
-    </div>
-  <!--End of 3 column grid-->
-
-
-
-  <!-- Full Column -->
-    <div class="fullcolumn">
-        <h2 class = "sectionHeader"> CONTACT </h2>
-        <p id = "description"> If you'd like to reach me, you can email me at   <a href="mailto:kneuenfeldt@hotmail.com">  kneuenfeldt@hotmail.com</a> or feel free to leave a message below. </p>
-    </div> <!--End of Full column-->
-
-  <!--Column 1of3-->
-    <div class="column">
-
-      <form>
-        <input type="text" id="fname" name="firstname" placeholder="FULL NAME">
-        <input type="text" id="lname" name="lastname" placeholder="EMAIL">
-      </form>
 
     </div>
 
-  <!--Full column for Text Field-->
-    <div class="fullcolumn">
-      <form>
-        <label id = "textarealabel">Your Message:</label>
-        <textarea></textarea>
-      </form>
-    </div>
-
-  <!--Column 1of3-->
-    <div class =  "column">
-      <div class = "inputfields">
-        <form>
-          <input type="submit" value="SEND MESSAGE" onclick="myFunction()">
-        </form>
-      </div>
-    </div>
-  <!--End of column-->
-
-  </div>
-<!--End of Page Content-->
 
 <!-- Footer -->
 <footer id = "homefooter">
