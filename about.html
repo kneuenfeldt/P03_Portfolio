@@ -6,7 +6,11 @@
 <title>P03 Style Guide</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:1,100,200,300,400,500,600,800" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,100,200,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="live-border.css"/>
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -14,14 +18,32 @@
   <img id = "logo" src="img/Logo2.png" alt="Smiley face" >
 
   <nav class="topnav">
-  <div class="topnav-right">
-    <a href="index.html">HOME</a>
-    <a href="#contact">PORTFOLIO</a>
-    <a href="about.html">ABOUT</a>
+    <div class="topnav-right">
+      <a href="index.html">HOME</a>
+      <a href="#contact">PORTFOLIO</a>
+      <a href="about.html">ABOUT</a>
+    </div>
+  </nav>
+
+  <div id="topNav2" class="navigation">
+    <span id="closebtn" onclick="navToggle()">
+    <span class="line1"></span>
+    <span class="line2"></span>
+    <span class="line3"></span>
+    </span>
+
+    <ul class="menulist">
+      <li><a class="menuitems" href="#">HOME</a></li>
+      <li><a class="menuitems" href="#">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="#">ABOUT</a></li>
+      <li><a class="menuitems" href="#">RESUME</a></li>
+    </ul>
+  </div>
+
+  <div id="main" >
   </div>
 
 
-</nav>
 
 <!-- Page Content -->
   <div class="columnContainer">
@@ -30,33 +52,27 @@
 
     <!-- Full Column -->
     <div class="fullcolumn">
+        <div id = "textboxnoanim">
+        <img id = "iconlogo2" src="img/logo.png" alt="Smiley face">
+        <p>My name is Kam Neuenfeldt. I'm a Wisconsin born level designer studying media arts and interactive systems in the Interactive Arts and Technology program at Simon Fraser University in Vancouver. I love being part of the ideation, planning, and implementation process of level design. My strongest skills are in programming as well as 3D modeling and web development.</p>
 
-      <p>My name is Kam Neuenfeldt. I'm a Wisconsin born level designer studying media arts and interactive systems in the Interactive Arts and Technology program at Simon Fraser University in Vancouver. I love being part of the ideation, planning, and implementation process of level design. My strongest skills are in programming as well as 3D modeling and web development.</p>
-      <img id = "portrait" src="img/portrait.png" alt="brokenlink" width = "225" height = "300">
-      <p>My greatest passion is playing videogames, especially the Sonic the Hedgehog franchise which I have made several mods of the original Genesis Platformers. I also love being involved in sports, having played hockey and soccer competitively for over 15 years.</p>
+        <img id = "portrait" src="img/portrait.png" alt="brokenlink" >
 
-    </div>
-
-    <!--Column 1of3-->
-    <div class =  "column">
-      <div class = "inputfields">
-        <form action = "http://www.sfu.ca/~kneuenfe/RESUME%20FINAL.pdf">
-          <input type="submit" value="RESUM&Eacute; ">
-        </form>
+        <p>My greatest passion is playing videogames, especially the Sonic the Hedgehog franchise which I have made several mods of the original Genesis Platformers. I also love being involved in sports, having played hockey and soccer competitively for over 15 years.</p>
+        <div class = "inputfields" id = "Resume">
+          <form action = "http://www.sfu.ca/~kneuenfe/RESUME%20FINAL.pdf">
+            <input type="submit" value="RESUM&Eacute; ">
+          </form>
+        </div>
       </div>
     </div>
-    <!--End of column-->
-
-
-
-
 
 
 
     <div class="fullcolumn">
 
       <h2 class = "sectionHeader"> CONTACT </h2>
-      <p id = "description"> If you'd like to reach me, please email me at kneuenfeldt@hotmail.ca or send a message below. </p>
+      <p id = "description"> If you'd like to reach me, you can email me at:   <a href="mailto:kneuenfeldt@hotmail.com">kneuenfeldt@hotmail.com</a>, or feel free to leave a message below. </p>
 
 
 
@@ -68,8 +84,6 @@
         <form>
 
           <input type="text" id="fname" name="firstname" placeholder="FULL NAME">
-
-
           <input type="text" id="lname" name="lastname" placeholder="EMAIL">
         </form>
 
@@ -96,6 +110,20 @@
     </div>
     <!--End of Page Content-->
 
+    <!-- Footer -->
+     <footer id = "homefooter">
+
+       <!-- Icons for social media accounts -->
+       <div id = "media-accounts">
+         <a href="https://www.facebook.com/kam.neuenfeldt" class="fa fa-facebook"></a>
+         <a href="https://www.instagram.com/mighty__k/" class="fa fa-instagram"></a>
+         <a href="https://vimeo.com/user24185644" class="fa fa-vimeo"></a>
+       </div>
+
+      <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+
+    </footer>
+
     <!-- Drop Down Menu Script and Alert if Message sent Sucessfully-->
   <script>
 
@@ -104,13 +132,22 @@
     }
   </script>
 
+  <script src="js/navoverlay.js">
+  </script>
 
-  <!-- Footer -->
-   <footer>
+  <script type="text/javascript" src="js/live-border.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("#textbox").liveBorder({
+        top: true,
+        right: true,
+        bottom: true,
+        left: true
+      });
 
-      <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+    });
+  </script>
 
-  </footer>
 
 
 
