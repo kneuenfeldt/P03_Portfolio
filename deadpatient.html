@@ -82,8 +82,7 @@
     <div class="fullcolumn">
       <div class = "textboxnoanim">
           <h2 class = "textboxHeader">CONCEPT </h2>
-        <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
-         I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
+        <p>The overall concept of this player is for them to try to solve the mystery of where their daughter is while also trying to survive a zombie infested hospital. By searching for clues, players can discovery what ultimately happened or learn what the caused the zombie outbreak to start. Players will have to face this while avoiding zombies that lurk around the hospital.
         </p>
           <img class = "gridimages" src="img/flowchart.png" alt="brokenlink" >
       </div>
@@ -92,8 +91,7 @@
     <!-- Full Column  -->
       <div class="fullcolumn">
       <h2 class ="smallHeader">PROCESS</h2>
-      <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
-       I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
+      <p>The first thing we focused on was discussed and came up with an idea for a non-linear narrative based on a dilemma that the player would have to choose. We settled on a horror themed exploration game where players would have to try and survive a zombie apocolypse while trying to figure out where the players missing daughter is. We started development by drawing out sketches of our character and creating a storyboard and player task flow to disgn how each level of the hospital would be structured and whhat/where key items would be placed. We then began designing the environment and character sprites that would be used for the game in photoshop. I then took those assets and designed each level based on the storyboards we created. Comments from playtesters were also used to later modify the design of the levels if there were issues found. Afterwards we did bug testing and implemented UI elements to provide clues for players. We then went through another stage of playtsting to see how the balance between exploration, fun and difficulty was. We added final changes to the level design and added sound effects before showing the final version to our class.
       </p>
     </div>
 
@@ -125,8 +123,7 @@
 
     <div class="fullcolumn">
       <h2 class ="smallHeader">MY ROLE</h2>
-      <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
-       I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
+      <p>My role on the game was primarily mapping out each floor of the hospital. Using sprite assets that were created in photoshop, I positioned pathways, objects, scenery and interactive objects based on storyboard sketches and user taskflow diagrams we created. Each level was designed so players would need to require at least one item (key, flashlight, or book) to progress further in the game. I also programmed UI elements which helped give clues and hints as to where the player go to progress further. Each level was designed to be fairly linear but hidden objects allowed players to explore different sections of the hospital. I also wrote an NPC pathfinder code for zombies to follow players to add tension to the game.
       </p>
       <img class = "gridimages" src="img/leveldesign1.png" alt="brokenlink">
 
@@ -135,8 +132,7 @@
 
     <div class="fullcolumn">
       <h2 class ="smallHeader">CHALLENGES</h2>
-      <p>I am a university student based in Vancouver, BC currently studying game design and programming at Simon Fraser University. Over 4 years of studying game mechanics and level design, I’ve gone through the process of developing several games that span across different genres; RPG, 3D Puzzle Platformer and 2D Action Platformer. With this experience, I have developed a multi perspective approach to game design.
-       I strive to enable players with discovery, choice, and accomplishment. My experience of creating levels and environments from prototype to implementation has taught me to convey new ideas to players in ways that free players to credit themselves for their successes and failures.
+      <p>Due to the game view having a top down camera, collision detection became an challenge due to the player sprite overlaping with wall layer sprites. Another challenge was making sure that the player didnt become easily lost by positioning items and clues in places that didnt stray too far away from players. Balancing this with the size of each hospital floor was difficult because play testers found that either the game became too slow or too easy to progress.
       </p>
       </div>
 
@@ -146,6 +142,7 @@
         <div class="fullcolumn">
           <div class = "textbox">
               <h2 class = "textboxHeader">FINAL BUILD & REFLECTION </h2>
+              <p>The final version of the game had a fully designed hospital, with sound effects and items placed around the hospital. Journals and pieces of paper with writing on them provided backdrop to the history of the zombie outbreak as well as clues to the daughters where-abouts. There are a total of 3 levels for the player to explore. Each floor gets significantly more difficult with zombie enemies and dark lighting to make the environment challenging to progress through and scary to navigate through.</p>
             <p>Reflecting upon this project, some things we learned in terms of design, story, and narrative, is that everything
 has to flow together. The characters need to be thought out well, and the story needs to void of all plotholes.
 Anything that makes the player question the story in terms of narrative and find plotholes, means we are not
@@ -170,15 +167,16 @@ action. Other than that, we are satisfied with what we have created.
      <a href="https://vimeo.com/user24185644" class="fa fa-vimeo"></a>
    </div>
 
-   <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/PO2_COMPANY_REPOSITORY">GITHUB REPOSITORY</a></p>
+   <p><a href="resources.html">RESOURCES</a> | <a href="styleguide.html">STYLE GUIDE</a> | <a href="https://github.com/kneuenfeldt/P03_Portfolio">GITHUB REPOSITORY</a></p>
 
 </footer>
 
+<!--Scipt for drop down menu -->
   <script src="js/navoverlay.js">
   </script>
-
-  <script type="text/javascript" src="js/live-border.js"></script>
-  <script type="text/javascript">
+<!--script for border animation -->
+  <script src="js/live-border.js"></script>
+  <script>
     $(function(){
       $(".textbox").liveBorder({
         top: true,

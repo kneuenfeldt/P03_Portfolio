@@ -130,8 +130,13 @@ h2.smallHeader{
   color: #ff3333;
 }
 
-h2#blueHeader{
+h2.blueHeader{
   color: #2D6E68;
+  font-size: 13pt;
+  margin-bottom:5px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-family: 'Montserrat';
 }
 
 h4{
@@ -253,7 +258,7 @@ h4.portimgheader{
 
   .menulist {
       width:200px;
-      padding 0;
+      padding: 0;
   }
 
   .line1, .line2, .line3 {
@@ -843,7 +848,7 @@ label{
     }
 
 
-  #description{
+  .description{
     width: 100%;
     text-align: center;
   }
